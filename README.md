@@ -1,3 +1,5 @@
+Our project was developed for the AgentX-AgentBeats Competition organized by Berkeley Responsible Decentralized Intelligence, where more than 1,500 teams participated worldwide. The framework evaluates LLM-driven agents on API code generation tasks, including API discovery, endpoint selection, RAG integration and executable Python code generation across benchmarks such as SOCBench-D and RestBench. Our team were a finalist in the Coding Agent Track, placing in the Top 10 overall.
+
 ## Overview
 
 The framework evaluates the performance of LLM-driven agents in API code generation tasks. It is designed to test how well agents can:
