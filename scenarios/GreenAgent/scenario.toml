@@ -1,0 +1,19 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+cmd = "python scenarios/GreenAgent/green.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "PurpleAgent"
+endpoint = "http://127.0.0.1:9018"
+# Purple Agent mode options (activate exactly one cmd line):
+cmd = "python scenarios/PurpleAgent/purple.py --host 127.0.0.1 --port 9018 --type single" # single mode
+# cmd = "python scenarios/PurpleAgent/purple.py --host 127.0.0.1 --port 9018 --type multi" # multi mode
+# cmd = "python scenarios/PurpleAgent/purple_orchestrator.py --host 127.0.0.1 --port 9018" # orchestrator mode
+# For orchestrator mode, first start in separate terminals:
+# python scenarios/PurpleAgent/auditor_agent.py --host 127.0.0.1 --port 9020
+# python scenarios/PurpleAgent/coder_agent.py --host 127.0.0.1 --port 9019
+[config]
+
+num_rounds = 1
+pass_at_k_n = 10
+pass_at_k_k = 1
